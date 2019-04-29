@@ -6,8 +6,7 @@ FILE *fp;
 operator [-+*/]
 identifier [a-zA-Z][a-zA-Z0-9-]*
 number [0-9]+
-expression ({identifier}|{number}){operator}({identifier}|
-{number})
+expression ({identifier}|{number}){operator}({identifier}|{number})
 %%
 \n { c++; }
 ^"#".+ ;
